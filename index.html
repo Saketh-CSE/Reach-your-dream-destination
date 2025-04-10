@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelIndia</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link for fonr awesome 5  used  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom icon for Travel Website-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/luggage_7868859.png">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                <img src="images/4873.jpg" class="img-fluid"
+                    style="object-fit: contain; width: 200px; height: 30px">
+            </div>
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+    
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your Email">
+            <input type="password" class="box" placeholder="Enter your Password">
+            <input type="submit" value="Login Now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Andhra  Pradesh Welcomes You!</h3>
+            <p>Discover Andhra Pradesh with us, Adventure Awaits.</p>
+            <p>Andhra Pradesh is yours to Explore.</p>
+            <a href="www.google.com" class="btnmain">Know more>>></a>
+        </div>
+        <div class="controls">
+            <div class="circle-controls">
+                <span class="img-btn active" data-src="images/You Need To Watch This Stunning Aerial Video Of Andhra Pradesh.gif"></span>
+                <span class="img-btn" data-src="images/imagecon2.jpg"></span>
+                <span class="img-btn" data-src="images/imagecon3.jpg"></span>
+                <span class="img-btn" data-src="images/imagecon4.jpg"></span>
+                <span class="img-btn" data-src="images/imagecon5.jpg"></span>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="images/You Need To Watch This Stunning Aerial Video Of Andhra Pradesh.gif" id="img-slider">
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+    <br />
+    <!-- book section starts  -->
+
+    <section class="book" id="book">
+
+        <h1 class="heading"><span>BOOKNOW</span></h1>
+        <br />
+        <div class="row">
+
+            <div class="image">
+                <img src="images/book-img.png" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location </h3>
+                    <input type="text" placeholder="Destination Name">
+                </div>
+                <div class="inputBox">
+                    <h3><i class="fas fa-user-friends"></i> No of Persons </h3>
+                    <input type="number" placeholder="Number of Guests">
+                </div>
+                <div class="inputBox">
+                    <h3><i class="fas fa-phone-alt"></i> Phone No </i></h3>
+                    <input type="number" placeholder="Contact Number">
+                </div>
+                <div class="inputBox">
+                    <h3><i class="fas fa-plane-arrival"></i> Arrival Date </h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3><i class="fas fa-plane-departure"></i> Departure Date </h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Book Now" onclick="book()">
+            </form>
+        </div>
+    </section>
+
+    <!-- book section ends -->
+    <br />
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>SERVICES</span>
+        </h1>
+        <br />
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-wifi"></i>
+                <h3>Wifi</h3>
+                <p>Wifi Available while Travelling. it can be Differenciated on Means of Transport you are Travelling.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable hotels</h3>
+                <p>Hotels are Posh and with all Facilities. If you want to stay in Nature Camp then you have to Specify
+                    while Booking.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and Beverages</h3>
+                <p>Food and Beverages are available on your seat itself just one click away.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety guide</h3>
+                <p>Covid Precautions are taken very seriously. We check Temperature every 8Hrs and taking care of your
+                    safety is our main Priority.</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-btc"></i>
+                <h3>Payment Method</h3>
+                <p>From Normal Indian Curreny including (PhonePe/Paytm/UPI) to Crypto curreny every currency in
+                    acceptable. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-train"></i>
+                <h3>Fastest travel</h3>
+                <p>You can travel by whatsoever means you want (Bus/Train/Aeroplane). You will be Charged Accordingly.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>We also have Adventure Camping Facility. Prefferd for People who want to spend their time in nature.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-smoking-ban"></i>
+                <h3>Smoking Ban</h3>
+                <p>Smoking is ban to keep our customers away from allergies and Bad Odur.</p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+    <br />
+    <!-- packages section starts  -->
+    <section class="packages" id="packages">
+
+        <h1 class="heading"><span>PACKAGES</span></h1>
+        <br />
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/p-1.jpg" alt="Tirupati">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Tirupati </h3>
+                    <p>Tirupati, famous for the Tirumala Venkateswara Temple, a major pilgrimage site.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> ₹5,999 <span>₹8,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="Visakhapatnam">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Visakhapatnam </h3>
+                    <p>Explore beaches, submarine museum, and more in this coastal city.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> ₹7,999 <span>₹12,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Araku Valley </h3>
+                    <p>Experience the serene beauty of Araku, known for its coffee plantations.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> ₹5,999 <span>₹10,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-4.jpg" alt="Amaravati">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Amaravati </h3>
+                    <p>Visit the new capital city, rich in history with the Amaravati Stupa.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹3,999 <span>₹7,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-5.jfif" alt="Srikakulam">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Srikakulam </h3>
+                    <p>Discover the cultural heritage and beaches of this historic town.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> ₹3,499 <span>₹7,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/19071545/KAKINADA-FEATURE-compressed.jpg" alt="Kakinada">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kakinada </h3>
+                    <p>Enjoy the coastal charm and industrial growth of this vibrant city.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> ₹4,999 <span>₹9,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+      <div class="box">
+                <img src="C:\Users\Moham\Desktop\Batch-07\images\srisailam.jpg" alt="Srisailam">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Srisailam </h3>
+                    <p>The bustling city with spiritual sites like Srisailam devastanam.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹6,999 <span>₹9,000</span> </div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- packages section ends -->
+    <br />
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"><span>GALLERY</span></h1>
+        <br />
+        <div class="box-container">
+            <div class="box">
+                <img src="images/vishaka beach.jpg" alt="Visakhapatnam Beach">
+                <div class="content">
+                    <h3>Visakhapatnam Beach</h3>
+                    <p>Famous for its scenic coastline, Visakhapatnam Beach offers breathtaking views and vibrant culture.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://discoverindiasite.wordpress.com/wp-content/uploads/2015/12/23019376190_fc2fb038e6_z_d.jpg" alt="Kanaka Durga Temple">
+                <div class="content">
+                    <h3>Kanaka Durga Temple</h3>
+                    <p>Located in Vijayawada, this temple is one of the most famous Hindu shrines in Andhra Pradesh.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="data:image/jpeg;base64,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" alt="Tirumala Temple">
+                <div class="content">
+                    <h3>Tirumala Temple</h3>
+                    <p>One of the holiest Hindu temples, dedicated to Lord Venkateswara, located in Tirupati.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://content.jdmagicbox.com/comp/vellore/x8/9999px416.x416.181214194856.i3x8/catalogue/bara-shaheed-dargah-shareef-auliya-adiyur-vellore-mosques-2e63de9xhx.jpg" alt="Barah Shaheed Dargah">
+                <div class="content">
+                    <h3>Barah Shaheed Dargah</h3>
+                    <p>A famous religious site in Nellore, visited by people of all faiths.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/01/e5607381e01f4afccd02137d7c1276dc_1000x1000.jpg" alt="Belum Caves">
+                <div class="content">
+                    <h3>Belum Caves</h3>
+                    <p>Belum Caves in Kurnool are the second longest caves in India with amazing stalactite formations.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4a/20/f2/grand-canyon-of-india.jpg?w=1200&h=1200&s=1" alt="Gandikota Fort">
+                <div class="content">
+                    <h3>Gandikota Fort</h3>
+                    <p>Known as the Grand Canyon of India, Gandikota Fort offers stunning landscapes.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="data:image/jpeg;base64,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" alt="Amaravati Stupa">
+                <div class="content">
+                    <h3>Amaravati Stupa</h3>
+                    <p>An ancient Buddhist site showcasing rich history and intricate carvings.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://xplro.com/wp-content/uploads/2024/05/Xplro-2024-05-24T012753.283.jpg" alt="Lambasingi">
+                <div class="content">
+                    <h3>Lambasingi</h3>
+                    <p>Popularly known as the Kashmir of Andhra Pradesh, Lambasingi is a hill station with mesmerizing views.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+           
+                <!-- <div class="content">
+                    <h3>Araku Valley</h3>
+                    <p>A scenic hill station known for its coffee plantations and tribal culture.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div> -->
+        </div>
+        
+    </section>
+
+    <!-- gallery section ends -->
+    <br />
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>REVIEW</span>
+        </h1>
+        <br />
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.jpg" alt="">
+                        <h3>Pankaj Tripathi</h3>
+                        <p> There was full safety and full covid precautions too. Vacation important nahi hai inke
+                            safety se santusht hue ye impotant hai.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.jfif" alt="">
+                        <h3>Guddu Pandit</h3>
+                        <p>अ आ इ ई उ ऊ ए ऐ ओ औ अं अः ऋ ॠ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स
+                            ह क्ष त्र ज्ञ. Good Travel Ok. </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.jpg" alt="">
+                        <h3>Mia Talerico</h3>
+                        <p>My mother doesn't speak english very well. she said me to convey this message that it was our
+                            Best Trip ever in India.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.jpg" alt="">
+                        <h3>Baburao Ganpatrao Apte</h3>
+                        <p>Mast Maja aya 5 star le re baba tu.baki Mera Chashma Reh Gaya Courier kardena re Baba. Jai
+                            Maharashtra. </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+    <br />
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>CONTACT</span>
+        </h1>
+        <br />
+        <div class="row">
+
+            <div class="map" style="width: 40%">
+                <iframe width="380" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Vijayawada,+Andhra+Pradesh&z=14&ie=UTF8&iwloc=B&output=embed">
+                    <a href="https://www.gps.ie/car-satnav-gps/">best sat navs</a>
+                </iframe>
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="number" placeholder="Phone No">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send Message>>>">
+            </form>
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+    <br />
+    <!-- footer section  -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>We Believe in Safe & Happy Travel. Do make yourself feel like party of TravelIndia Family. Visit any
+                    destination at very ease and safety with us.
+                </p>
+            </div>
+           <div class="box">
+    <h3>Branch Locations</h3>
+    <p>Visakhapatnam</p>
+    <p>Vijayawada</p>
+    <p>Tirupati</p>
+    <p>Nellore</p>
+    <p>Kurnool</p>
+</div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home">Home</a>
+                <a href="#book">Book</a>
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>Contact us</h3>
+                <p><i class="fas fa-phone-alt"></i> +1 9087267762</i></p>
+                <p><i class="fas fa-envelope"></i> Travelindia@agency.com</i></p>
+                <p><i class="fas fa-home"></i> Be 368 A, Gali No 1, Near Lig Flats, Hari Nagar</i></p>
+            </div>
+
+            
+        </div>
+        <h1 class="credit"> Created by <span> Manthan Ugemuge</span> | &copy; All rights reserved! by TravelIndia </h1>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- javascript file  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
